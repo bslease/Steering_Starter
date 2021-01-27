@@ -50,8 +50,8 @@ public class Kinematic : MonoBehaviour
         }
 
         // check for speeding and clip
-        // Millington p.58, lines 15-8
-        // note that Millington's pseudocoed on p.58 does not clip angular velocity, but we do here
+        // Millington p.58, lines 15-18
+        // note that Millington's pseudocode on p.58 does not clip angular velocity, but we do here
         if (linearVelocity.magnitude > maxSpeed)
         {
             linearVelocity.Normalize();
